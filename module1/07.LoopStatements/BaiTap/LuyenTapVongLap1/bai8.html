@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button onclick="Play()">Play</button>
+    <p id="result"></p>
+</body>
+    <script>
+        function Play() {
+            document.getElementById("result").innerHTML= "";
+            let n1 = parseInt(prompt("Nhập số chặn nhỏ: "));
+            let n2 = parseInt(prompt("Nhập số chặn lớn: "));
+            let r = Math.floor(Math.random() * n2) + n1;
+            for (let i = 1; i <= 3; i++){
+                let n3 = parseInt(prompt("Nhập số dự đoán: "));
+                if (n3 < r){
+                    alert("Giá trị lớn hơn số bạn nhập");
+                }
+                    else if (n3 > r){
+                        alert("Giá trị nhỏ hơn số bạn nhập");
+                    }
+                        else
+                            alert("Chúc mừng bạn đã đoán đúng");
+                            break;
+            }
+            document.getElementById("result").innerHTML= "Kết quả đúng là: "+ r;
+
+        }
+    </script>
+</html>

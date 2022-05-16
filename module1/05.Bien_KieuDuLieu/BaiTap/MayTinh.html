@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="Num1">
+    <input type="text" id="Num2">
+    <br>
+    <button onclick="Addition()">Addition(+)</button>
+    <button onclick="Subtraction()">Subtraction(-)</button>
+    <button onclick="Multiplication()">Multiplication(x)</button>
+    <button onclick="Division()">Division(/)</button>
+    <p id="Result"></p>
+</body>
+    <script>
+        let Num1 = document.getElementById("Num1");
+        let Num2 = document.getElementById("Num2");
+        function Addition() {
+            Result = "Addition: " + (parseInt(Num1)+parseInt(Num2));
+            document.getElementById("Result").innerHTML = Result;
+        }
+        function Subtraction() {
+            Result = "Subtraction: " + (parseInt(Num1).value - parseInt(Num2).value);
+            document.getElementById("Result").innerHTML = Result;
+        }
+        function Multiplication() {
+            Result = "Multiplication: " + (parseInt(Num1) * parseInt(Num2));
+            document.getElementById("Result").innerHTML = Result;
+        }
+        function Division() {
+            Result = "Division: " + (parseInt(Num1) / parseInt(Num2));
+            document.getElementById("Result").innerHTML = Result;
+        }
+    </script>
+</html>

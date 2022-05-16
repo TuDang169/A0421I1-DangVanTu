@@ -1,0 +1,27 @@
+body {
+    padding: 50px;
+}
+input {
+    width: 95%;
+}
+
+table {
+    width: 20%;
+    border-collapse: collapse;
+    border: 5px solid black;
+}
+button {
+    width: 40px;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    /*border: 1px solid black;*/
+    text-align: center;
+    color: blue;
+}
+
+.hover {
+    /*background: red;*/
+}

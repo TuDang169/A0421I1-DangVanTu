@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <img src="img/PMS14026-1593105393.jpg" id="Ball" style="position: absolute;left: 0; top: 0" height="100" width="100"/>
+    <p>Move The Ball</p>
+    <input type="button" value="Click Me" />
+</form>
+<script>
+    window.addEventListener("keydown", moveBall)
+    function moveBall(evt) {
+        let Ball = document.getElementById("Ball");
+        switch (evt.keyCode) {
+            case 37: {
+                Ball.style.left = parseInt(Ball.style.left) - 5 + 'px';
+                break;
+            }
+            case 38: {
+                Ball.style.top = parseInt(Ball.style.top) - 5 + 'px';
+                break;
+            }
+            case 39: {
+                Ball.style.left = parseInt(Ball.style.left) + 5 + 'px';
+                break;
+            }
+            case 40: {
+                Ball.style.top = parseInt(Ball.style.top) + 5 + 'px';
+                break;
+            }
+        }
+    }
+</script>
+</body>
+</html>

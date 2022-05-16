@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // CLick button will show popup
+        function clickMe() {
+            alert("Click button");
+        }
+        function hello() {
+            var ten = prompt('Hãy nhập tên của bạn: ');
+            var tuoi = parseInt(prompt('Hãy nhập tuổi của bạn: '));//Number
+            document.getElementById("result").innerText = `Xin chao ${ten}
+                        Tuổi của bạn là ${tuoi}
+                        Kieu du lieu cua bien tuoi: ${typeof tuoi}`;
+        }
+        function testConfirm() {
+            var flag = confirm('Bạn đang học javascript phải không ?');
+            if (flag) {
+                document.getElementById("result").innerText = 'Bạn đang học js';
+                document.getElementById("test").innerText = '<b>This is text</b>';
+            } else {
+                document.getElementById("result").innerText = 'Bạn đang học môn khác';
+                document.getElementById("test").innerHTML = '<b>This is text</b>';
+            }
+        }
+        function testDocumentWrite() {
+            document.write("<button onclick='testDocumentWrite()'>Click me</button>");
+            document.write("<b>This is text</b>");
+            console.log("write log");
+        }
+        /* Thông dịch: dịch từng dòng
+         * Biên dịch: dịch 1 lần hết tất
+         */
+    </script>
+</head>
+<body>
+<button onclick="testConfirm()">Click me</button>
+<div id="result">
+</div>
+<div id="test">
+</div>
+<!-- <script>
+    alert("Hello");
+</script> -->
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Game caro phiên bản lỗi</h3>
+<script>
+    let arr = [];
+    let check = true;
+    function initArray() {
+        for (let i = 0; i < 5; i++) {
+            arr[i] = new Array();
+            for (let j = 0; j < 5; j++) {
+                arr[i][j] = "";
+            }
+        }
+    }
+    function displayTable() {
+        document.body.innerHTML = "";
+        let display = "<table border='1'>";
+        for (let i = 0; i < arr.length; i++) {
+            display += "<tr>"
+            for (let j = 0; j < arr[i].length; j++) {
+                display += "<td onclick='changeValue(" + i + "," + j + ")' style='width: 50px; height: 50px;text-align: center'>" + arr[i][j] + "</td>"
+            }
+            display += "</tr>"
+        }
+        display += "</table>"
+        display += "<button onclick='changeValue()'>Click</button>"
+        document.write(display)
+    }
+    function changeValue(x, y) {
+        if (arr[x][y] === "X" || arr[x][y] === "O") {
+            alert("Ô nay da duoc nguoi khac choi")
+        } else {
+            if (check) {
+                arr[x][y] = "X";
+                checkWin("X");
+            } else {
+                arr[x][y] = "O";
+                checkWin("O");
+            }
+            check = !check;
+            displayTable();
+        }
+    }
+    function checkWin(temp) {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < 3; j++) {
+                if (arr[i][j] === temp && arr[i][j + 1] === temp && arr[i][j + 2] === temp) {
+                    alert(temp + " thang");
+                    initArray();
+                    displayTable();
+                }
+            }
+        }
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] === temp && arr[i + 1][j] === temp && arr[i + 2][j] === temp) {
+                    alert(temp + " thang");
+                    initArray();
+                    displayTable();
+                }
+            }
+            for (let j = 0; j < 3; j++) {
+                if (arr[i][j] === temp && arr[i + 1][j + 1] === temp && arr[i + 2][j + 2] === temp) {
+                    alert(temp + " thang");
+                    initArray();
+                    displayTable();
+                }
+            }
+            for (let j = 2; j < 5; j++) {
+                if (arr[i][j] === temp & arr[i + 1][j - 1] === temp && arr[i + 2][j - 2] === temp) {
+                    alert(temp + " thang");
+                    initArray();
+                    displayTable();
+                }
+            }
+        }
+    }
+    initArray();
+    displayTable();
+    var person = {name:'Smith'};
+</script>
+</body>
+</html>

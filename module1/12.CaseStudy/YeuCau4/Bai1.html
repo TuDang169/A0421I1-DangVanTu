@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let str = "tRuong    TaN   HAI ";
+    let result = '';
+    for (let i = 0; i < str.length; i++) {
+        result += str[i].toLowerCase();
+        if (str[i-1] == "&nbsp&nbsp") {
+            str[i] == str[i].toUpperCase();
+            result += str[i];
+        }
+    }
+    alert(result);
+</script>
+</html>

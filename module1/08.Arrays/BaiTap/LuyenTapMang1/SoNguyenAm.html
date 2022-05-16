@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+    <script>
+        let arr = [];
+        let num;
+        do {
+            num = parseInt(prompt("Mời bạn nhập số lượng phần tử của mảng: "))
+        } while (num <= 0 || isNaN(num));
+        for (let i = 0; i < num; i++) {
+            arr[i] = parseInt(prompt("Mời bạn nhập phần tử thứ " + i));
+        }
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < 0) {
+                count++;
+            }
+        }
+        alert("Số lượng số không phải là số dương là: " + count);
+    </script>
+</html>

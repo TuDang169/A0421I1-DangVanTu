@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // sinh vien: ten, lop, diachi
+    var tens = [];
+    var lops = [];
+    var diachis = [];
+    tens.push("Nam");
+    lops.push("2702");
+    diachis.push("Da Nang");
+    // ES6
+    class SinhVien {
+        constructor(ten, lop) {
+            this.ten = ten;
+            this.lop = lop;
+            // this.diaChi = diaChi;
+        }
+    ​
+        setTen(ten) {
+            this.ten = ten;
+        }
+        getLop() {
+            return this.ten;
+        }
+    ​
+        setLop(lop) {
+            this.lop = lop;
+        }
+        getTen() {
+            return this.lop;
+        }
+    ​
+        setDiaChi(ten) {
+            this.diaChi = diaChi;
+        }
+        getDiaChi() {
+            return this.diaChi;
+        }
+    }
+​
+        class HocSinh {
+            study() {
+                this.action = "class";
+                console.log("study");
+            }
+        ​
+            read() {
+                this.action = "read";
+                console.log("read");
+            }
+        }
+​
+        var dsSinhVien = [];
+    dsSinhVien.push(new SinhVien("Nam", "2702", "Da Nang"));
+    var sv = new SinhVien("Nam", "2702", "Da Nang");// new SinhVien()
+    var hs = new HocSinh();
+    hs.action = "sleeping";
+
+    var d = new Date();
+    document.write(d.toLocaleString() + "<br/>");
+    document.write(d.toUTCString() + "<br/>");
+    var d2 = new Date(1622505600000);
+    document.write(d2.toLocaleString() + "<br/>");
+    document.write(d2.toUTCString() + "<br/>");
+    document.write(Math.abs(-2) + "<br/>");
+
+    var str = new String("Hello world");
+    document.write(str.charAt(4) + "<br/>");
+    document.write(str.startsWith("Hel") + "<br/>");
+    document.write(str.indexOf("wor") + "<br/>");
+    var listStr = str.split(" ");
+    for(let i = 0; i < listStr.length; i++) {
+        document.write(listStr[i] + "<br/>");
+    }
+</script>
+</body>
+</html>

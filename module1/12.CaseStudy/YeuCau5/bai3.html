@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let m = parseInt(prompt("Nhập m"));
+    let n = parseInt(prompt("Nhập n"));
+    let arr = new Array(m);
+    let max = 0;
+    let min = 0;
+    for ( let i= 0; i < m; i++ ) {
+        arr[i] = new Array(n);
+        for ( let j= 0; j < n; j++ ) {
+            arr[i][j] = parseInt(prompt("Nhập a["+i+"]["+j+"]"));
+            max = arr[0][0];
+            min = arr[0][0];
+            if (max < arr[i][j]){
+                max = arr[i][j];
+            }
+            if (min > arr[i][j]){
+                min = arr[i][j];
+            }
+        }
+    }
+    alert("Số lớn nhất: "+max+"và số nhỏ nhất: " +min);
+</script>
+</html>

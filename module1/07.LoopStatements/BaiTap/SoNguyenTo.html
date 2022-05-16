@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Nhap N: "));
+        for(let i = 1 ; i <= n ; i++){
+            let c = 0;
+            for (let j = 2; j <= Math.sqrt(i); j++){
+                if ( i % j == 0 ){
+                    c++;
+                }
+            }
+            if (c === 0 && i > 1){
+                document.write(i+ "<br>");
+            }
+        }
+    </script>
+</body>
+</html>

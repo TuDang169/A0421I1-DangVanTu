@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arrayProduct = ["Sony", "SamSung", "Oppo"];
+    function showProduct() {
+        document.body.innerHTML = "";
+        document.writeln("<input type='text' id='product' ><button onclick='addProduct()'>Create</button> ");
+        document.writeln("<table>");
+        for (let i = 0; i < arrayProduct.length; i++){
+            document.writeln("<tr>");
+            document.writeln("<td>"+ arrayProduct[i]+ "</td>");
+            document.writeln("<td><button onclick='deleteProduct("+ i +")'>Delete</button></td>");
+            document.writeln("<td><button onclick='editProduct("+ i +")'>Edit</button></td>");
+            document.writeln("</tr>");
+        }
+        document.writeln("<br/></table>");
+    }
+    function addProduct() {
+        let product = document.getElementById("product").value;
+        arrayProduct.push(product);
+        showProduct();
+    }
+    function deleteProduct(i) {
+        if (confirm("Bạn có chắc muốn xoá "+ arrayProduct[i]+ "Chứ?")){
+            arrayProduct.splice(i, 1);
+        }
+        showProduct();
+    }
+    function editProduct(index) {
+
+    }
+    function successProduct(i) {
+        let product = document.getElementById("editValueOfProduct").value;
+        if (arrayProduct.indexOf(product) != -1) {
+            alert("Sản phẩm đã tồn tại. Mời bạn nhập thông tin khác!")
+        } else {
+            arrayProduct[i] = product;
+            displayProduct();
+        }
+    }
+    showProduct();
+</script>
+</html>
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let n = parseInt(prompt("Nhập dộ dài mảng: "));
+    let c = 0;
+    let arr = new Array();
+    for(let i = 0; i< n;i++ ){
+        arr[i] =prompt("Nhập arr["+i+"]= ");
+        if (isNaN(arr[i])){
+            c = c + 1;
+        }
+    }
+    let s = n - c;
+    document.write("số ký tự số trong mảng: "+s);
+</script>
+</html>

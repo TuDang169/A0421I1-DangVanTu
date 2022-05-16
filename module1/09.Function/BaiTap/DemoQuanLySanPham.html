@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let arrayProduct = ["Sony", "SamSung", "Oppo"];
+    function displayProduct() {
+        document.body.innerHTML = "";
+        document.writeln("<input id='product' type='text'><button onclick='addProduct()'>Create</button>");
+        document.writeln("</br><table>");
+        for (let i = 0; i < arrayProduct.length; i++) {
+            document.writeln("<tr>")
+            document.write("<td>" + arrayProduct[i] + "</td>");
+            document.writeln("<td> <button onclick='updateProduct(" + i + ")'>Edit</button></td>")
+            document.writeln("<td> <button onclick='deleteProduct(" + i + ")'>Delete</button></td>")
+            document.writeln("</tr>")
+        }
+        document.writeln("</table>")
+    }
+    function addProduct() {
+        let product = document.getElementById("product").value;
+        if (arrayProduct.indexOf(product) != -1) {
+            alert("Sản phẩm đã tồn tại. Mời bạn nhập thông tin khác!")
+        } else {
+            arrayProduct.push(product);
+            displayProduct();
+        }
+    }
+    function deleteProduct(index) {
+        if (confirm("Bạn có chắc muốn xóa " + arrayProduct[index] + " hay không?")) {
+            arrayProduct.splice(index, 1);
+            displayProduct();
+        }
+    }
+    function updateProduct(index) {
+        document.body.innerHTML = "";
+        document.writeln("<input id='product' type='text'><button onclick='addProduct()'>Create</button>");
+        document.writeln("</br><table>");
+        for (let i = 0; i < arrayProduct.length; i++) {
+            document.writeln("<tr>");
+            if (i == index) {
+                document.write("<td><input id='editValueOfProduct' value='" + arrayProduct[i] + "'></td>");
+                document.writeln("<td> <button onclick='successProduct(" + i + ")'>Update</button></td>");
+            } else {
+                document.write("<td>" + arrayProduct[i] + "</td>");
+                document.writeln("<td> <button onclick='updateProduct(" + i + ")'>Edit</button></td>");
+            }
+            document.writeln("<td> <button onclick='deleteProduct(" + i + ")'>Delete</button></td>");
+            document.writeln("</tr>")
+        }
+        document.writeln("</table>")
+    }
+    function successProduct(index) {
+        let product = document.getElementById("editValueOfProduct").value;
+        if (arrayProduct.indexOf(product) != -1) {
+            alert("Sản phẩm đã tồn tại. Mời bạn nhập thông tin khác!")
+        } else {
+            arrayProduct[index] = product;
+            displayProduct();
+        }
+    }
+    displayProduct();
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let drink = 0;
+    let price = 0;
+    do{
+        drink = parseInt(prompt("Mời bạn nhập đồ uống|" +
+            "1:Cafe| 2:Cam vắt| 3:Nước ép cà rốt| " +
+            "4:Nước ép cà chua| 5:Nước lọc| 6:Nước dừa| " +
+            "7: Thoát"));
+        switch (drink) {
+            case 1:
+                let drink1 = prompt("Giá của Cafe: 10 Nghìn đồng x số lượng:");
+                price += 10 *drink1;
+                break;
+            case 2:
+                let drink2 = prompt("Giá của Cam Vắt: 15 Nghìn đồng x số lượng:");
+                price += 15 *drink2;
+                break;
+            case 3:
+                let drink3 = prompt("Giá của nước ép cà rốt: 12 Nghìn đồng x số lượng:");
+                price += 15 *drink3;
+                break;
+            case 4:
+                let drink4 = prompt("Giá của Nước ép cà chua: 12 Nghìn đồng x số lượng:");
+                price += 15 *drink4;
+                break;
+            case 5:
+                let drink5 = prompt("Giá của nước lọc: 5 Nghìn đồng x số lượng:");
+                price += 15 *drink5;
+                break;
+            case 6:
+                let drink6 = prompt("Giá của Nước dừa: 20 Nghìn đồng x số lượng:");
+                price += 20 *drink6;
+                break;
+        }
+
+    }
+    while (drink != 7);
+    alert("Số tiền bạn cần thanh toán là: "+price + " Nghìn đồng");
+</script>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="Input"><button onclick="Transfer()">Transfer</button>
+</body>
+    <script>
+        function Transfer() {
+            let i = parseInt(document.getElementById("Input").value);
+            i = i + 1;
+            document.getElementById("Input").value = i;
+        }
+    </script>
+</html>

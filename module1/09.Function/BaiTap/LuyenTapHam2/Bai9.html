@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function checkNum() {
+        let arr = new Array();
+        let n = parseInt(prompt("Nhap do dai mang: "));
+        let num = parseInt(prompt("Nhap so bat ky: "));
+        let c = 0;
+        for (let i = 0; i < n; i++){
+            arr[i]= parseInt(prompt("Nhap arr["+i+"]= "));
+            if (arr[i]==num){
+                c++;
+            }
+        }
+        if (c>0){
+            alert(num + " xuat hien "+ c + " lan");
+        }
+        else
+            alert("-1");
+    }
+    checkNum();
+</script>
+</html>;

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [];
+    document.write("Mảng bạn vừa nhập: <br>");
+    for (let i = 0; i< 5; i++){
+        arr[i] = parseInt(prompt("mời bạn nhập số thứ "+i+":"));
+        document.write(arr[i]+ " ");
+    }
+    document.write("<br>");
+    arr.sort();
+    document.write("Mảng sau khi sắp xếp: <br>");
+    for (let i = 0; i< 5; i++){
+        document.write(arr[i]+ " ");
+    }
+</script>
+</html>

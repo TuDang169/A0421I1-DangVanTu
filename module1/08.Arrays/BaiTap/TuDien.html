@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="n">
+    <button onclick="dich()">Dịch</button>
+    <p></p>
+</body>
+<script>
+    let anh = [one,two,three,four,five,six,seven, eight, nine, ten];
+    let viet = [mot, hai, ba, bo, nam, sau, bay, tam, chin, muoi];
+    function dich() {
+        let n = document.getElementById("n").value;
+        for(let i =0; i<10; i++){
+            if(anh[i]=n){
+                console.log(viet[i]);
+            }
+            else {
+                console.log("Không tìm thấy");
+            }
+        }
+    }
+</script>
+</html>

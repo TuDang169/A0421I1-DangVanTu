@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let w = parseInt(prompt("Thu nhap cua ban la....Trieu Dong"));
+    let t = 0;
+    if (w < 5){
+        alert("Chua du so tien de dong thue");
+    }
+    else if(w <= 10){
+        t = w*10/100;
+    }
+    else if(w <= 18){
+        t = w*15/100;
+    }
+    else if(w<=32){
+        t = w*20/100;
+    }
+    else if(w<=52){
+        t = w*25/100;
+    }
+    else if(w<=80){
+        t = w*30/100;
+    }
+    else t = w*35/100;
+
+    document.write("tien thue la: "+ t);
+
+</script>
+</html>

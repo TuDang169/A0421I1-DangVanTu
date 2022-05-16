@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    class Product {
+        constructor(name, price, description) {
+            this.name = name;
+            this.price = price;
+            this.description = description;
+        }
+    }
+    let arrayProduct = [];
+    arrayProduct.push(new Product("Iphone", "100000000đ", "Iphone 11 pro max"));
+    arrayProduct.push(new Product("Iphone", "100000000đ", "Iphone 12 pro max"));
+    arrayProduct.push(new Product("Iphone", "100000000đ", "Iphone 13 pro max"));
+    function displayProduct() {
+        document.body.innerHTML="";
+        let result = "<button onclick='showFormCreate()'>Create Product</button>"
+        result += "<table border='1'>";
+        for (let i = 0; i < arrayProduct.length; i++) {
+            result += "<tr>";
+            result += "<td>" + arrayProduct[i].name + "</td>";
+            result += "<td>" + arrayProduct[i].price + "</td>";
+            result += "<td>" + arrayProduct[i].description + "</td>";
+            result += "<td><button onclick='showFormEditProduct("+i+")'>Edit</button></td>";
+            result += "<td><button onclick='deleteProduct("+i+")'>Delete</button></td>";
+            result += "</tr>";
+        }
+        result += "</table>";
+        document.writeln(result);
+    }
+    function showFormCreate() {
+        document.body.innerHTML="";
+        let result = "Name: <input id='name'><br>"
+        result+="Price: <input id='price'><br>"
+        result+="Description: <input id='description'><br>"
+        result+="<button onclick='createProduct()'>Create</button>"
+        document.writeln(result)
+    }
+    function createProduct() {
+        let name = document.getElementById("name").value;
+        let price = document.getElementById("price").value;
+        let description = document.getElementById("description").value;
+        arrayProduct.push(new Product(name,price,description));
+        displayProduct();
+    }
+    function deleteProduct(index) {
+        if(confirm("Bạn có muốn xóa đối tượng ở vị trí "+index+" hay không?")) {
+            arrayProduct.splice(index,1);
+            displayProduct();
+        }
+    }
+    function showFormEditProduct(index) {
+        document.body.innerHTML="";
+        let result = "Name: <input id='name' value='"+arrayProduct[index].name+"'><br>"
+        result+="Price: <input id='price' value='"+arrayProduct[index].price+"'><br>"
+        result+="Description: <input id='description' value='"+arrayProduct[index].description+"'><br>"
+        result+="<button onclick='editProduct("+index+")'>Create</button>"
+        document.writeln(result)
+    }
+    function editProduct(index) {
+        let name = document.getElementById("name").value;
+        let price = document.getElementById("price").value;
+        let description = document.getElementById("description").value;
+        arrayProduct[index] = new Product(name,price,description);
+        displayProduct();
+    }
+    displayProduct();
+</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+</head>
+<body>
+    <form>
+        <h1>Market Research Survey</h1>
+        <p>Please take a few moments to complete this satisfaction survey.</p>
+        <hr>
+        <b>What is your age range?</b> <br>
+        <select name="age" style="width: 500px">
+            <option>18-24</option>
+            <option>10-18</option>
+            <option>24-32</option>
+        </select>
+        <br>
+        <b>What is your yearly income range?</b> <br>
+        <select name="income" style="width: 500px">
+            <option>0$-25000$</option>
+            <option>25000$-50000$</option>
+        </select>
+        <br>
+        <b>Gender Identity</b> <br>
+        <label><input type="radio" name="male">Male</label> <br>
+        <label><input type="radio" name="female">Female</label> <br>
+        <b>Which of the following products have your purchased in the last 2 months. Please check all that apply.</b> <br>
+        <label><input type="checkbox" name="product" value="">Product 1</label> <br>
+        <label><input type="checkbox" name="product" value="">Product 2</label> <br>
+        <label><input type="checkbox" name="product" value="">Product 3</label> <br>
+        <b>How often would you use our new product?</b> <br>
+        <label><input type="radio" name="male">Daily</label> <br>
+        <label><input type="radio" name="male">Weekly</label> <br>
+        <label><input type="radio" name="male">Monthly</label> <br>
+        <b>What would you pay for the new product?</b> <br>
+        <table>
+            <tr>
+                <td>$</td>
+                <td><input type="text" size="10"></td>
+                <td>.</td>
+                <td><input type="text" size="1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Dollars</td>
+                <td></td>
+                <td>Cents</td>
+            </tr>
+        </table>
+        <b>What features would you like to see in the new product.</b> <br>
+        <textarea cols="101" rows="5"></textarea> <br>
+        <label>Please rate your level of agreement with the following statements.</label> <br>
+        <table border="1">
+            <tr>
+                <td></td>
+                <td>Strongly Disagree</td>
+                <td>Disagree</td>
+                <td>Agree</td>
+                <Td>Strongly Agree</Td>
+            </tr>
+            <tr>
+                <Td><b>Our products are priced fairly.</b></Td>
+                <td>
+                    <input style="text-align: center" type="radio"> <br>
+                    <label style="text-align: center">1</label>
+                </td>
+                <td>
+                    <input style="text-align: center" type="radio"> <br>
+                    <label style="text-align: center">2</label>
+                </td>
+                <td>
+                    <input style="text-align: center" type="radio"> <br>
+                    <label style="text-align: center">3</label>
+                </td>
+                <td>
+                    <input style="text-align: center" type="radio"> <br>
+                    <label style="text-align: center">4</label>
+                </td>
+            </tr>
+            <tr>
+                <Td><b>Our products are high quality.</b></Td>
+                <td>
+                    <input style="text-align: center" type="radio"> <br>
+                    <label style="text-align: center">1</label>
+                </td>
+                <td>
+                    <input style="text-align: center" type="radio"> <br>
+                    <label style="text-align: center">2</label>
+                </td>
+                <td>
+                    <input style="text-align: center" type="radio"> <br>
+                    <label style="text-align: center">3</label>
+                </td>
+                <td>
+                    <input style="text-align: center" type="radio"> <br>
+                    <label style="text-align: center">4</label>
+                </td>
+            </tr>
+            <tr>
+                <Td><b>You would recommend our product to a friend or coworker.</b></Td>
+                <td>
+                    <input style="text-align: center" type="radio"> <br>
+                    <label style="text-align: center">1</label>
+                </td>
+                <td>
+                    <input style="text-align: center" type="radio"> <br>
+                    <label style="text-align: center">2</label>
+                </td>
+                <td>
+                    <input style="text-align: center" type="radio"> <br>
+                    <label style="text-align: center">3</label>
+                </td>
+                <td>
+                    <input style="text-align: center" type="radio"> <br>
+                    <label style="text-align: center">4</label>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

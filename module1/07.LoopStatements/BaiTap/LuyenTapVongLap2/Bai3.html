@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    for (let i = 0; i<5; i++){
+        document.write("<br/>");
+        for (let j = 0; j < 5; j++){
+            if (i>=j){
+                document.write("*");
+            }
+            else
+                document.write("");
+        }
+    }
+    for (let i = 0; i<5; i++){
+        document.write("<br/>");
+        for (let j = 0; j < 5; j++){
+            if (i<=j){
+                document.write("*");
+            }
+            else
+                document.write("");
+        }
+    }
+    for (let i = 4; i >= 0; i--){
+        document.write("<br/>");
+        for (let j = 0; j < 5; j++){
+            if (i<=j){
+                document.write("*");
+            }
+            else
+                document.write("&nbsp&nbsp");
+        }
+    }
+    for (let i = 4; i >= 0; i--){
+        document.write("<br/>");
+        for (let j = 4; j >= 0; j--){
+            if (i>=j){
+                document.write("*");
+            }
+            else
+                document.write("&nbsp&nbsp");
+        }
+    }
+</script>
+</html>

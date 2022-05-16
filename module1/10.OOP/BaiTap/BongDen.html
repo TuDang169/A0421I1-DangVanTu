@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // class SwicthButton{
+    //
+    // }
+    class Battery{
+        constructor(battery) {
+            this.battery = battery;
+        }
+        decrease() {
+            if (this.isEmpty()) {
+                alert("Đã hết Pin")
+            } else {
+                this.battery--;
+            }
+        }
+        isEmpty() {
+            if (this.battery <= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        checkBattery(){
+            if (this.isEmpty()){
+                alert("Đã hết Pin");
+                return false;
+            }
+            else
+                return this.battery;
+        }
+        showBattery() {
+            if (this.isEmpty()) {
+                alert("Đã hết Pin");
+            } else
+                alert(this.battery);
+        }
+    }
+    class ElectricLamp{
+        constructor(status) {
+            this.status = status;
+        }
+        turnOnLamp(battery){
+            if(battery.checkBattery()){
+                battery.decrease();
+                alert("Đèn đã bật");
+                return this.status = true;
+            }
+        }
+        turnOffLamp(){
+            if(this.status){
+                alert("Đèn đã tăt");
+                return this.status = false;
+            }
+        }
+    }
+    let battery = new Battery(15);
+    let lamp = new ElectricLamp();
+    for(let i=0;i<10;i++) {
+        lamp.turnOnLamp(battery);
+        lamp.turnOffLamp();
+    }
+    battery.showBattery();
+</script>
+</html>

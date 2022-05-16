@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="img/css/Cpt.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="Num"></td>
+        </tr>
+        <tr>
+            <td><button onclick="Nhap('1')">1</button></td>
+            <td><button onclick="Nhap('2')">2</button></td>
+            <td><button onclick="Nhap('3')">3</button></td>
+            <td><button onclick="Nhap('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="Nhap('4')">4</button></td>
+            <td><button onclick="Nhap('5')">5</button></td>
+            <td><button onclick="Nhap('6')">6</button></td>
+            <td><button onclick="Nhap('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="Nhap('7')">7</button></td>
+            <td><button onclick="Nhap('8')">8</button></td>
+            <td><button onclick="Nhap('9')">9</button></td>
+            <td><button onclick="Nhap('x')">x</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="Nhap('C')">C</button></td>
+            <td><button onclick="Nhap('0')">0</button></td>
+            <td><button onclick="Action()">=</button></td>
+            <td><button onclick="Nhap('/')">/</button></td>
+        </tr>
+    </table>
+</body>
+    <script>
+        function Nhap(temp) {
+            document.getElementById("Num").value += temp;
+                if (temp == "C"){
+                    document.getElementById("Num").value = "";
+                }
+            }
+        function Action() {
+            document.getElementById("Num").value = (eval(document.getElementById("Num").value));
+        }
+    </script>
+</html>

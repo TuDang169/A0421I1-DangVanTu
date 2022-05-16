@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let w = parseInt(prompt("Nhap so dien da tieu hao: "));
+    let t = 0;
+    if (w <= 50){
+        t = w * 600;
+    }
+        else if(w <= 100){
+            t = (w-50)*865+ 50*600;
+        }
+            else if(w <= 150 ){
+                t = (w - 100)*1135 + 50*865 + 50*600;
+            }
+                else if(w<=200){
+                    t =(w -150)*1495 + 50*1135 + 50* 865 + 50*600;
+                }
+    document.write(t);
+
+</script>
+</html>

@@ -1,0 +1,19 @@
+table {
+
+}
+body {
+    padding: 100px;
+}
+
+td {
+    background-color: #e3e3e3;
+    width: 40px;
+}
+
+th {
+    background-color: #0d0e10;
+    height: 40px;
+}
+td, th {
+    padding:1px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr1 = new Array();
+    let arr2 = new Array();
+    for (let i=0; i < 10; i++){
+        arr1[i]=prompt("Nhập phẩn tử mảng 1 " +i);
+    }
+    for (let i=0; i < 10; i++){
+        arr2[i]= prompt("Nhập phẩn tử mảng 2" +i);
+    }
+    let arr3 = arr1.concat(arr2);
+    for (let i = 0; i <arr3.length; i++){
+        document.write(arr3[i]);
+    }
+</script>
+</html>

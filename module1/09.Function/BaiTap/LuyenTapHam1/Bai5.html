@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="n">
+<button onclick="findStar()">Find</button>
+<p></p>
+</body>
+<script>
+    let Star = [Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe , Regulus];
+    let Constellation = [Ursa Minor, Tarurus, Cygnus, Lyra, Aquila, Ursa Major, Leo];
+    function findStar() {
+        let n = document.getElementById("n").value;
+        for(let i =0; i<10; i++){
+            if(Star[i]=n){
+                console.log(Constellation[i]);
+            }
+            else {
+                console.log("Không tìm thấy");
+            }
+        }
+    }
+</script>
+</html>

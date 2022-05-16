@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Battery{
+        constructor(battery) {
+            this.battery = battery;
+        }
+        decrease() {
+            if (this.isEmpty()) {
+                alert("Điện thoại đã hết Pin")
+            } else {
+                this.battery--;
+            }
+        }
+        isEmpty() {
+            if (this.battery <= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        checkBattery(){
+            if (this.isEmpty()){
+                alert("Điện thoại đã hết Pin");
+                return false;
+            }
+            else if(this.battery>100){
+                alert("Bạn đã nhập sai giá trị(tối đa 100)");
+                return false;
+            }
+            else
+                return this.battery;
+        }
+    }
+    class Phone{
+        constructor(status, texting, inbox, send, message) {
+            this.status = false;
+            this.texing = texting;
+            this.inbox = inbox;
+            this.send = send;
+            this.message = "";
+        }
+        turnOnPhone(battery){
+            if (battery.checkBattery()){
+                alert("Điện thoại đã khởi động");
+                return this.status = true;
+            }
+            else
+                return this.status = false;
+        }
+
+        turnOffPhone(){
+            if (this.status){
+                alert("Đã tắt điện thoại");
+                return this.status = false;
+            }
+        }
+        chargeBattery(battery){
+            if (battery.checkBattery() < 100){
+                alert("Điện thoại đã được sạc đầy");
+                return battery.battery = 100;
+            }
+            else alert("Pin đã đầy");
+        }
+        getMessage(){
+            if(this.status){
+                battery.decrease();
+                return this.message;
+            }
+        }
+        setMessage(message){
+            if(this.status){
+                battery.decrease();
+                return this.message = message;
+            }
+        }
+        sendMessage(phone,message){
+            if(this.status){
+                battery.decrease();
+                phone.setMessage(message);
+            }
+        }
+    }
+    let nokia = new Phone();
+    let iphone = new Phone();
+    let battery = new Battery(50);
+    nokia.turnOnPhone(battery);
+    iphone.turnOnPhone(battery);
+    nokia.chargeBattery(battery);
+    // nokia.turnOffPhone();
+    nokia.sendMessage("Message from Nokia",iphone);
+    let iphoneMessage = iphone.getMessage();
+    alert(iphoneMessage);
+</script>
+</html>

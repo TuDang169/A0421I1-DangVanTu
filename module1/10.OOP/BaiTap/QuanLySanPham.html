@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Product{
+        constructor(name, price, description) {
+            this.name = name;
+            this.price = price;
+            this.decription = description;
+        }
+    }
+    let arrProduct = [];
+    function showProduct() {
+        document.body.innerText ="";
+        let result = "<button onclick='createProduct()'>Create Product</button><table border='1'>";
+            for(let i= 0; i < arrProduct.length; i++){
+                result += "<tr>";
+                result += "<td>"+arrProduct[i].name+"</td>";
+                result += "<td>"+arrProduct[i].price+"</td>";
+                result += "<td>"+arrProduct[i].decription+"</td>";
+                result += "<td><button onclick='delProduct("+i+")'>Delete</button></td>";
+                result += "<td><button onclick='editProduct("+i+")'>Edit</button></td>";
+                result += "</tr>";
+        }
+            result += "</table>";
+        document.write(result);
+    }
+    function createProduct() {
+        let result  = "<table>";
+            result += "<tr>";
+            result += "<td>"+"Name"+"</td>";
+            result += "<td><input id='name'></td>";
+            result += "<tr>";
+            result += "<td>"+"Price"+"</td>";
+            result += "<td><input id='price'></td>";
+            result += "</tr>";
+            result += "<tr>";
+            result += "<td>"+"Decription"+"</td>";
+            result += "<td><input id='decription'></td>";
+            result += "</tr>";
+            result += "<td><button onclick='create()'>Create</button></td>";
+            result += "</tr>";
+        document.write(result);
+
+    }
+    function create() {
+        let name = document.getElementById("name").value;
+        let price = document.getElementById("price").value;
+        let decription = document.getElementById("decription").value;
+        arrProduct.push(new Product(name,price,decription));
+        showProduct();
+    }
+    function delProduct(i) {
+        let choose = confirm("Bạn chắc muốn xoá sản phẩm này chứ?");
+        if(choose){
+            arrProduct.splice(i,1);
+            showProduct();
+        }
+    }
+    function editProduct(i) {
+        let result  = "<table>";
+            result += "<tr>";
+            result += "<td>"+"Name"+"</td>";
+            result += "<td><input id='name' value='"+arrProduct[i].name+"'></td>";
+            result += "<tr>";
+            result += "<td>"+"Price"+"</td>";
+            result += "<td><input id='price' value='"+arrProduct[i].price+"'></td>";
+            result += "</tr>";
+            result += "<tr>";
+            result += "<td>"+"Decription"+"</td>";
+            result += "<td><input id='decription' value='"+arrProduct[i].decription+"'></td>";
+            result += "</tr>";
+            result += "<td><button onclick='saveChangeProDuct("+i+")'>Save</button></td>";
+            result += "</tr>";
+        document.write(result);
+    }
+    function saveChangeProDuct(i) {
+        let name = document.getElementById("name").value;
+        let price = document.getElementById("price").value;
+        let decription = document.getElementById("decription").value;
+        arrProduct[i] = new Product(name,price,decription);
+        showProduct();
+    }
+    showProduct();
+</script>
+</html>

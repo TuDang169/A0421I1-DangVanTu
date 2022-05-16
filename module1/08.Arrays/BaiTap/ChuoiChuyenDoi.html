@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KTSNT</title>
+</head>
+<body>
+<script>
+    let str = "Truong Tan Hai"
+    let result = '';
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] >= 'a' && str[i] <= 'z') {
+            result += str[i].toUpperCase();  // a->A
+        } else if (str[i] >= 'A' && str[i] <= 'Z') {
+            result += str[i].toLowerCase(); //A ->a
+        } else {
+            result += str[i];
+        }
+    }
+    alert(result);
+</script>
+</body>
+</html>

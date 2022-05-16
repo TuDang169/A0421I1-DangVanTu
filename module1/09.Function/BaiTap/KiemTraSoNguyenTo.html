@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let n = parseInt(prompt("Nhap N: "));
+    function isPrime() {
+        let c = 0;
+        for(let i = 2 ; i <= n ; i++){
+            for (let j = 2; j <= Math.sqrt(i); j++){
+                if ( i % j == 0 ){
+                    c++;
+                }
+            }
+
+        }
+        if (c == 0){
+            return n+ " là số nguyên tố";
+        }
+        else
+            return n+ " không phải là số nguyên tố";
+    }
+    let result = isPrime(n);
+    alert(result);
+</script>
+</html>

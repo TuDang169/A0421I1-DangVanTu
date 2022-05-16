@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Temperature{
+        constructor(C) {
+            this.C = C;
+        }
+        setC(C){
+            if(this.checkC()){
+                this.C = C;
+            }
+            else
+                alert("Gia tri k phai do C");
+        }
+        getC(){
+            if(this.checkC()){
+                return this.C;
+            }
+            else
+                alert("Gia tri k phai do C");
+        }
+        checkC(){
+            if(this.C > -273){
+                return true;
+            }
+            else
+                return false;
+        }
+        convertF(){
+            return this.C *1.8 + 32;
+        }
+        convertK(){
+            return this.C + 273.15;
+        }
+    }
+    let Temp = new Temperature(25);
+    let C = Temp.getC();
+    let F = Temp.convertF();
+    let K = Temp.convertK();
+    alert("Do F: "+ F+ " Do K: " +K);
+    Temp.setC(-500); //K hien thi the alert trong getC
+</script>
+</html>

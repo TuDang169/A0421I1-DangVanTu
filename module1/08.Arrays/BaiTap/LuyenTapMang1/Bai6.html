@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = new Array();
+    let count = 0;
+    let v = parseInt(prompt("Nhap so V: "));
+    let n = parseInt(prompt("Nhap do dai mang: "));
+    for (let i=0; i < n; i++){
+        arr[i]= parseInt(prompt("Nhập phẩn tử " +i));
+    }
+    for (let j = 0; j < n; j++){
+        if(arr[j] === v){
+            count = 1;
+        }
+    }
+    if (count == 1)
+        alert("V is in the arrays");
+    else
+        alert("V isn't in the arrays");
+</script>
+</html>

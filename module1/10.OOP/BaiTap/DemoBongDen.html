@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Battery {
+        constructor(energy) {
+            this.energy = energy;
+        }
+        getEnergy() {
+            return this.energy;
+        }
+        setEnergy(energy) {
+            this.energy = energy;
+        }
+        decreaseEnergy() {
+            if(this.energy>0) {
+                this.energy--;
+            } else {
+                alert("Pin đã cạn. Thay pin mới")
+            }
+        }
+    }
+    class FlashLamp {
+        constructor(status) {
+            this.status = status;
+            this.battery = new Battery(100);
+        }
+        getBattery() {
+            return this.battery;
+        }
+        setBattery(battery) {
+            this.battery = battery;
+        }
+        light() {
+            if(this.status) {
+                this.battery.decreaseEnergy();
+            } else {
+                alert("Làm ơn bật đèn")
+            }
+        }
+        turnOn() {
+            if(this.battery.getEnergy()>0) {
+                this.status = true;
+            }
+        }
+        turnOf() {
+            this.status = false;
+        }
+    }
+    function main() {
+        let flashLamp = new FlashLamp(true);
+        if(flashLamp.status) {
+            alert("Đèn đang bật")
+        } else {
+            alert("Đèn đang tắt")
+        }
+        for(let i=0;i<10;i++) {
+            flashLamp.light();
+        }
+        alert("Pin hiện tại: "+flashLamp.getBattery().getEnergy())
+    }
+    main();
+</script>
+</html>

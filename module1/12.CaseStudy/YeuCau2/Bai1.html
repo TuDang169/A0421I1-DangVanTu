@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let luong = parseInt(prompt("Moi ban nhap muc thu nhap: (trieu)"));
+    let thue = 0;
+    if (luong >= 15){
+        thue = luong*20/100;
+    }
+    else
+        if (luong >=7){
+            thue = luong*15/100;
+        }
+        else
+            thue = luong*5/100;
+    document.write(thue);
+</script>
+</html>

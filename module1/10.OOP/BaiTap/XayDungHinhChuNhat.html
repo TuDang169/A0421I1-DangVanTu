@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Rectangle{
+        constructor(length, width) {
+            this.length =length;
+            this.width = width;
+        }
+        setLength(length){
+            this.length = length;
+        }
+        getLength(){
+            return this.length;
+        }
+        setWidth(width){
+            this.width = width;
+        }
+        getWidth(){
+            return this.width;
+        }
+        getArea(){
+            return length*width;
+        }
+        getCir(){
+            return 2*(length+width);
+        }
+    }
+    let rectangle = new Rectangle(10,5);
+    let length = rectangle.getLength();
+    let width = rectangle.getWidth();
+    let area = rectangle.getArea();
+    let cir = rectangle.getCir();
+    alert("Dien tich: "+ area+ " va chu vi: "+ cir);
+    rectangle.setLength(7);
+    rectangle.setWidth(4);
+    rectangle.getArea();
+    rectangle.getCir();
+    alert("Dien tich: "+ area+ " va chu vi: "+ cir);
+</script>
+</html>

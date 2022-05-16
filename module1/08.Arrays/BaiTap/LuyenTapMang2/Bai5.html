@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr1 = [prompt("Nhap mang 1: ")];
+    let arr2 = [prompt("Nhap mang 2: ")];
+    let count = true;
+    // for (let i = 0; i<arr1.length; i++) {
+    //         if(arr1[i]!=arr2[i]){
+    //             document.write("Đây là 2 chuỗi khác nhau");
+    //             break;
+    //         }
+    // }
+    for (let i = 0; i<arr1.length; i++) {
+                if(arr1[i]!=arr2[i]){
+                    count = false;
+                }
+        }
+    if(count==true){
+        document.write("Đây là 2 chuỗi giống nhau");
+    }else
+        document.write("Đây là 2 chuỗi khác nhau");
+
+</script>
+</html>

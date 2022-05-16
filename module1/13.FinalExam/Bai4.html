@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class HocSinh{
+        constructor(stt, hoTen, ngaySinh, diemTB) {
+            this.stt = stt;
+            this.hoTen = hoTen;
+            this.ngaySinh = ngaySinh;
+            this.diemTB = diemTB;
+        }
+        thongTinHocSinh(){
+            let result  = "<table border='1'>";
+                result += "<tr>";
+                result += "<td>"+"Số thứ tự"+"</td>";
+                result += "<td>"+ this.stt+"</td>";
+                result += "<tr>";
+                result += "<td>"+"Họ và tên"+"</td>";
+                result += "<td>"+this.hoTen+"</td>";
+                result += "</tr>";
+                result += "<tr>";
+                result += "<td>"+"Ngày sinh"+"</td>";
+                result += "<td>"+this.ngaySinh+"</td>";
+                result += "</tr>";
+                result += "<tr>";
+                result += "<td>"+"Điểm trung bình"+"</td>";
+                result += "<td>"+this.diemTB+"</td>";
+                result += "</tr>";
+                result += "</table>";
+                result += "<br>";
+            document.write(result);
+        }
+        kiemTraHocLuc() {
+            if (this.diemTB >10){
+                document.write("Bạn đã nhập sai số điểm. Mời nhập lại");
+            } else if (this.diemTB > 8) {
+                document.write(this.hoTen+ " đạt học sinh GIỎI ");
+            } else if (this.diemTB >= 6.5) {
+                document.write(this.hoTen + " đạt học sinh KHÁ");
+            } else if (this.diemTB >= 5) {
+                document.write(this.hoTen + " đạt học sinh TRUNG BÌNH");
+            } else if (this.diemTB >= 3.5) {
+                document.write(this.hoTen +" đạt học sinh YẾU");
+            } else {
+                document.write(this.hoTen +" đạt học sinh KÉM");
+            }
+        }
+    }
+    let hocSinh1 = new HocSinh(1, "Nguyễn A", "01/01/98", 7.9);
+    let hocSinh2 = new HocSinh(2, "Nguyễn B", "02/02/99", 10);
+    let hocSinh3 = new HocSinh(3, "Nguyễn C", "03/03/97", 6.4);
+    let hocSinh4 = new HocSinh(4, "Nguyễn D", "04/04/96", 4.9);
+    let hocSinh5 = new HocSinh(4, "Nguyễn E", "05/05/95", 3.4);
+
+    hocSinh1.kiemTraHocLuc();
+    hocSinh1.thongTinHocSinh();
+
+    hocSinh2.kiemTraHocLuc();
+    hocSinh2.thongTinHocSinh();
+
+    hocSinh3.kiemTraHocLuc();
+    hocSinh3.thongTinHocSinh();
+
+    hocSinh4.kiemTraHocLuc();
+    hocSinh4.thongTinHocSinh();
+
+    hocSinh5.kiemTraHocLuc();
+    hocSinh5.thongTinHocSinh();
+
+</script>
+</html>

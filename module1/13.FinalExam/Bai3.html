@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr1 =[10, 5, 2, 8, -1, 6, 8];
+    let arr2 = [2, 4, 0, 5, 1];
+    let arr3 =[8, 6, 2, 8, 1, 1, 4];
+    function findMaxScore(array) {
+        let max = array[0];
+        for (let i = 0; i < array.length; i++){
+            if(max < array[i]){
+                max = array[i];
+            }
+        }
+        let index = array.lastIndexOf(max);
+        return document.write("Giá trị lớn nhất trong mảng là: "+ max+". Tại vị trí: " +index+"<br>");
+    }
+    findMaxScore(arr1);
+    findMaxScore(arr2);
+    findMaxScore(arr3);
+</script>
+</html>

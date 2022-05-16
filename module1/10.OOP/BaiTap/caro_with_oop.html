@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // class Caro {
+        //     constructor(player1, player2, width, height) {
+        //         this.player1 = player1;
+        //         this.player2 = player2;
+        //         this.width = width;
+        //         this.height = height;
+        //         this.arrayOfCaro = new Array(height);
+        //         this.isCheckPerson1 = true;
+        //     }
+        //     init() {
+        //         for (let i = 0; i < this.width; i++) {
+        //             this.arrayOfCaro[i] = new Array();
+        //             for (let j = 0; j < this.height; j++) {
+        //                 this.arrayOfCaro[i][j] = ""
+        //             }
+        //         }
+        //     }
+        //     displayCaro() {
+        //         let temp = "<table border=1 cellpadding = 20> ";
+        //         for (let i = 0; i < this.width; i++) {
+        //             temp += "<tr>"
+        //             for (let j = 0; j < this.height; j++) {
+        //                 temp += "<td onclick ='changeCaro(" + i + "," + j + ")'>" + this.arrayOfCaro[i][j] + "</td>"
+        //             }
+        //             temp += "</tr>"
+        //         }
+        //         temp += "</table>"
+        //         document.write(temp);
+        //     }
+        //     changeCaro(x, y) {
+        //         if (this.arrayOfCaro[x][y] == "X" || this.arrayOfCaro[x][y] == "O") {
+        //             alert("Ô bạn chọn đã có người khác chọn")
+        //         } else {
+        //             if (this.isCheckPerson1) {
+        //                 this.arrayOfCaro[x][y] = "X";
+        //                 this.checkWinner("X");
+        //                 this.isCheckPerson1 = false;
+        //             } else {
+        //                 this.arrayOfCaro[x][y] = "O";
+        //                 this.checkWinner("O");
+        //                 this.isCheckPerson1 = true;
+        //             }
+        //
+        //             document.body.innerHTML = "";
+        //             this.displayCaro();
+        //
+        //         }
+        //     }
+        //     checkWinner(temp) {
+        //         for (let i = 0; i < this.height; i++) {
+        //             for (let j = 0; j < this.width -2; j++) {
+        //                 if (this.arrayOfCaro[i][j] == temp && this.arrayOfCaro[i][j + 1] == temp && this.arrayOfCaro[i][j + 2] == temp) {
+        //                    if(temp =="O") {
+        //                        alert(this.player1 +" win")
+        //                    } else {
+        //                     alert(this.player2 +" win")
+        //                    }
+        //                     this.init();
+        //                     this.displayCaro();
+        //                 }
+        //             }
+        //         }
+        //         // for (let i = 0; i < 3; i++) {
+        //         //     for (let j = 0; j < 5; j++) {
+        //         //         if (arrayOfCaro[i][j] == temp && arrayOfCaro[i + 1][j] == temp && arrayOfCaro[i + 2][j] == temp) {
+        //         //             alert(temp + " win")
+        //         //             init();
+        //         //             displayCaro();
+        //         //         }
+        //         //     }
+        //         //     for (let j = 0; j < 3; j++) {
+        //         //         if (arrayOfCaro[i][j] == temp && arrayOfCaro[i + 1][j + 1] == temp && arrayOfCaro[i + 2][j + 2] == temp) {
+        //         //             alert(temp + " win")
+        //         //             init();
+        //         //             displayCaro();
+        //         //         }
+        //         //     }
+        //         //     for (let j = 2; j < 5; j++) {
+        //         //         if (arrayOfCaro[i][j] == temp && arrayOfCaro[i + 1][j - 1] == temp && arrayOfCaro[i + 2][j - 2] == temp) {
+        //         //             alert(temp + " win")
+        //         //             init();
+        //         //             displayCaro();
+        //         //         }
+        //         //     }
+        //         // }
+        //     }
+        // }
+        // let caro = new Caro("Hai", "A07", 10, 10);
+        // caro.init();
+        // caro.displayCaro();
+        // function changeCaro(i, j) {
+        //     caro.changeCaro(i, j);
+        // }
+
+        class Caro {
+            constructor() {
+                this.arrCaro = new Array(20);
+                this.checkPerson1 = true;
+            }
+
+            init() {
+                for(let i = 0 ; i< this.arrCaro.length;i++) {
+                    this.arrCaro[i] = new Array(20);
+                    for(let j =0; j<this.arrCaro[i].length;j++) {
+                      this.arrCaro[i][j]=" ";
+                    }
+                }
+            }
+            displayCaro() {
+                document.body.innerHTML="";
+                let result ="<table border='1'>"
+                for(let i = 0 ; i< this.arrCaro.length;i++) {
+                    result += "<tr>"
+                    for(let j =0; j<this.arrCaro[i].length;j++) {
+                        result += "<td width='40px' height='40px' onclick='change("+i+","+j+")'>"+this.arrCaro[i][j]+"</td>";
+                    }
+                    result+="</tr>"
+                }
+                result += "</table>";
+                document.write(result);
+            }
+            changeCaro(x,y) {
+                if(this.arrCaro[x][y] =="X"||this.arrCaro[x][y] =="O") {
+                    alert("Oo nayf ddax cos nguoi choi")
+                } else {
+                    if (this.checkPerson1) {
+                        this.arrCaro[x][y] = "X";
+                    } else {
+                        this.arrCaro[x][y] = "O";
+                    }
+                    this.checkPerson1 = !this.checkPerson1;
+                    this.displayCaro();
+                }
+            }
+            checkWin() {
+
+            }
+        }
+
+       let caro = new Caro();
+        caro.init();
+        caro.displayCaro();
+        function change(x,y) {
+            caro.changeCaro(x,y);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function soNT(n){
+        let flag = true;
+        if (n < 2) {
+            flag = false;
+        } else {
+            for (let i = 2; i < n-1; i++) {
+                if (n % i == 0) {
+                    flag = false;
+                    break;
+                }
+            }
+        }
+        if (flag == true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    let m = parseInt(prompt("Nhập m"));
+    let n = parseInt(prompt("Nhập n"));
+    let arr = new Array(n);
+    let count = 0;
+    for ( let i= 0; i < n; i++ ) {
+        arr[i] = new Array(m);
+        for ( let j= 0; j < m; j++ ) {
+            arr[i][j] = parseInt(prompt("Nhập a["+i+"]["+j+"]"));
+            if(soNT(arr[i][j])){
+                count++;
+            }
+        }
+    }
+    alert(count);
+</script>
+</html>

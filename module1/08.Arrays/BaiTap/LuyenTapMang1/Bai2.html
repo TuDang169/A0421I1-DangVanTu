@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = new Array();
+    let count =0;
+    let max = 0;
+    for (let i=0; i<10;i++){
+
+        arr[i]= parseInt(prompt("Nhập phẩn tử " +i));
+    }
+    for (let j = 0; j<10; j++){
+        if(arr[j]>=max){
+            max = arr[j];
+            count = j;
+        }
+    }
+    alert("max là: "+max+ " tại vị trí: "+ count);
+</script>
+</html>

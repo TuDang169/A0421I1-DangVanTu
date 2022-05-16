@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class SoXo {
+        constructor(so1, so2, so3, so4, so5, so6) {
+            this.so1 = so1;
+            this.so2 = so2;
+            this.so3 = so3;
+            this.so4 = so4;
+            this.so5 = so5;
+            this.so6 = so6;
+        }
+    }
+    let arrVeSo = [];
+    function muaVeSo() {
+        let choose = parseInt(prompt("Nhấn 1 nếu bạn muốn tự chọn số, 2 là mua vé số ngẫu nhiên"));
+        if(choose==1){
+            let result  =  "Số 1<input id='so1'>";
+                result +=  "Số 2<input id='so2'>";
+                result +=  "Số 3<input id='so3'>";
+                result +=  "Số 4<input id='so4'>";
+                result +=  "Số 5<input id='so5'>";
+                result +=  "Số 6<input id='so6'>";
+                result +=  "<button onclick='xacNhanMuaVe()'>Mua Vé</button>";
+            document.write(result);
+        } else if(choose == 2){
+            let veSo = [];
+            for (let i = 0; i<6; i++){
+                veSo[i] = Math.floor(Math.random()*99);
+            }
+            arrVeSo.push(new SoXo(veSo[0],veSo[1],veSo[2],veSo[3],veSo[4],veSo[5]));
+            display();
+        }
+    }
+    function xacNhanMuaVe() {
+        let so1 = parseInt(document.getElementById("so1").value);
+        let so2 = parseInt(document.getElementById("so2").value);
+        let so3 = parseInt(document.getElementById("so3").value);
+        let so4 = parseInt(document.getElementById("so4").value);
+        let so5 = parseInt(document.getElementById("so5").value);
+        let so6 = parseInt(document.getElementById("so6").value);
+        arrVeSo.push(new SoXo(so1,so2,so3,so4,so5,so6));
+        display();
+    }
+    function display() {
+        document.body.innerText ="";
+        let result = "<button onclick='muaVeSo()'>Mua vé số</button>" +
+            "<button onclick='ketQua()'>Kết quả</button><table border='1'> ";
+        for (let i = 0; i<arrVeSo.length; i++){
+            result+="<tr>";
+            result+="<td>"+arrVeSo[i].so1+"</td>";
+            result+="<td>"+arrVeSo[i].so2+"</td>";
+            result+="<td>"+arrVeSo[i].so3+"</td>";
+            result+="<td>"+arrVeSo[i].so4+"</td>";
+            result+="<td>"+arrVeSo[i].so5+"</td>";
+            result+="<td>"+arrVeSo[i].so6+"</td>";
+            result+="</tr>";
+        }
+        result+="</table>";
+        document.write(result);
+    }
+    function ketQua() {
+        let veSo = [];
+        for (let i = 0; i<6; i++){
+            veSo[i] = Math.floor(Math.random()*99);
+        }
+        let giaiDacBiet = new SoXo(veSo[0],veSo[1],veSo[2],veSo[3],veSo[4],veSo[5]);
+        let result = "<table border='1'>";
+            result += "<tr>";
+            result += "<td>" + giaiDacBiet.so1 + "</td>";
+            result += "<td>" + giaiDacBiet.so2 + "</td>";
+            result += "<td>" + giaiDacBiet.so3 + "</td>";
+            result += "<td>" + giaiDacBiet.so4 + "</td>";
+            result += "<td>" + giaiDacBiet.so5 + "</td>";
+            result += "<td>" + giaiDacBiet.so6 + "</td>";
+            result +="</tr>";
+            result +="</table>";
+        for (let i = 0; i<arrVeSo.length; i++){
+            if( giaiDacBiet.so1 == arrVeSo[i].so1 &&
+                giaiDacBiet.so2 == arrVeSo[i].so2 &&
+                giaiDacBiet.so3 == arrVeSo[i].so3 &&
+                giaiDacBiet.so4 == arrVeSo[i].so4 &&
+                giaiDacBiet.so5 == arrVeSo[i].so5 &&
+                giaiDacBiet.so6 == arrVeSo[i].so6){
+                    alert("Chúc mừng bạn đã trúng giải đặc biệt ở vé: "+i);
+            } else
+                if (giaiDacBiet.so2 == arrVeSo[i].so2 &&
+                    giaiDacBiet.so3 == arrVeSo[i].so3 &&
+                    giaiDacBiet.so4 == arrVeSo[i].so4 &&
+                    giaiDacBiet.so5 == arrVeSo[i].so5 &&
+                    giaiDacBiet.so6 == arrVeSo[i].so6){
+                        alert("Chúc mừng bạn đã trúng giải nhì ở vé: "+i);
+                } else
+                    if(giaiDacBiet.so4 == arrVeSo[i].so4 &&
+                        giaiDacBiet.so5 == arrVeSo[i].so5 &&
+                        giaiDacBiet.so6 == arrVeSo[i].so6){
+                            alert("Chúc mừng bạn đã trúng giải ba ở vé: "+i);
+                    } else
+                        alert("Rất tiếc! bạn đã không trúng thưởng");
+        }
+        document.write("Giải đặc biệt là: </br>" + result);
+    }
+    display();
+</script>
+</html>

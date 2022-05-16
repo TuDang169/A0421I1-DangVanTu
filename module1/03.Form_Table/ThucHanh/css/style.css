@@ -1,0 +1,28 @@
+body {
+    padding: 50px;
+}
+
+table {
+    width: 40%;
+    border-collapse: collapse;
+}
+
+h2 {
+    text-align: center;
+    width: 40%;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+th {
+    font-weight:400;
+    color: #0d0e10;
+    text-align: center;
+    background-color: #d2d691;
+}
+.hover {
+    background: red;
+}
