@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>List Subject</h1>
+    <form action="/subject/list">
+        Teacher name: <input type="text" name="teacher" /> <br/>
+        <input type="submit" value="Search">
+    </form>
+    <table border="1">
+        <tr>
+            <th>Subject ID</th>
+            <th>Subject Name</th>
+            <th>Teacher</th>
+            <th>Note</th>
+        </tr>
+        <tr th:each="subject: ${subjects}">
+            <td th:text="${subject.subjectId}"></td>
+            <td th:text="${subject.subjectName}"></td>
+            <td th:text="${subject.teacher}"></td>
+            <td th:text="${subject.note}"></td>
+        </tr>
+    </table>
+</body>
+</html>

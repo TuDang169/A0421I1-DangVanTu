@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer</title>
+</head>
+<body>
+<div class="searchTable">
+    <table cellpadding="2" class="table table-hover">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Birthday</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Id Card</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Email</th>
+            <th scope="col">Address</th>
+            <th scope="col">Customer Type</th>
+            <th scope="col">View</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="customer : ${customers}">
+            <td scope="col" th:text="${customer.name}"></td>
+            <td scope="col" th:text="${customer.birthday}"></td>
+            <td scope="col" th:switch="${customer.gender}">
+                <p th:case="true">Male</p>
+                <p th:case="false">Female</p>
+            </td>
+            <td scope="col" th:text="${customer.idCard}"></td>
+            <td scope="col" th:text="${customer.phone}"></td>
+            <td scope="col" th:text="${customer.email}"></td>
+            <td scope="col" th:text="${customer.address}"></td>
+            <td scope="col" th:if="${customer.customerType}" th:text="${customer.customerType.name}"></td>
+            <td scope="col" th:unless="${customer.customerType}"></td>
+            <td scope="col" >
+                <button type="button" class="btn btn-outline-dark" id="btnModalView"
+                        th:onclick="'javascript:showView('+ ${customer.id} + ')'">
+                    View
+                </button>
+            </td>
+            <td scope="col" ><a class="btn btn-outline-dark"
+                                th:href="@{/edit-customer/__${customer.id}__ }">Edit</a></td>
+
+            <td scope="col">
+                <button class="btn btn-danger"
+                        th:onclick="'javascript:showDelete(\''+ ${customer.id} + '\')'">
+                    Delete
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

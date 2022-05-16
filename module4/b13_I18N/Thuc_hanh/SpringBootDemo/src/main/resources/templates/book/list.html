@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List book</title>
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/list.js"></script>
+</head>
+<body>
+    <div>
+        <span>Language</span>
+        <span><a href="?lang=en" th:text="#{english}"></a></span>
+        <span><a href="?lang=vn" th:text="#{vietnamese}"></a></span>
+        <span><a href="?lang=fr" th:text="#{france}"></a></span>
+    </div>
+    <h1 th:text="#{list.title}">List Book</h1>
+    <!--<form th:action="@{/book/list}" method="get">
+        <input type="text" name="nameBook" />
+        <input type="submit" value="Search" />
+    </form>-->
+    <input type="text" name="nameBook" id="nameBook"/>
+    <button onclick="getListBook();" th:text="#{list.search}">Search</button>
+    <table border="1">
+        <thead>
+            <tr>
+                <th th:text="#{id}">ID</th>
+                <th th:text="#{bookname}">Book Name</th>
+                <th th:text="#{price}">Price</th>
+                <th th:text="#{author}">Author</th>
+            </tr>
+        </thead>
+
+        <tbody id="result">
+            <tr th:each="b, iter: ${books}">
+                <td th:text="${b.bookId}"></td>
+                <td th:text="${b.name}"></td>
+                <td th:text="${b.price}"></td>
+                <td th:text="${b.author}"></td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>

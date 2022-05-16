@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h1>Products</h1>
+<div>
+    <div style="float: left"><a class="btn btn-outline-primary" href="/create-product" >Create new product</a></div>
+    <div style="float: right">
+        <form class="flex-column">
+            Search by name:
+            <input name="search" type="text"/>
+            <input type="submit" class="btn btn-outline-dark" value="Search"/>
+        </form>
+    </div>
+</div>
+
+<div class="searchTable">
+    <table cellpadding="2" class="table table-hover">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col">Giá bắt đầu</th>
+            <th scope="col">Tình Trạng</th>
+            <th scope="col">Product Type</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+                <tr th:each="product : ${products}">
+                    <td scope="col" th:text="${product.name}"></td>
+                    <td scope="col" th:text="${product.price}"></td>
+                    <td scope="col" th:text="${product.status}"></td>
+                    <td scope="col" th:if="${product.productType}" th:text="${product.productType.name}"></td>
+                    <td scope="col" th:unless="${product.productType}"></td>
+                    <td scope="col" ><a class="btn btn-outline-dark"
+                           th:href="@{/edit-product/__${product.id}__ }">Edit</a></td>
+                    <td scope="col">
+                        <button class="btn btn-danger"
+                                th:onclick="'javascript:showDelete(\''+ ${product.id} + '\')'">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <a th:href="@{'/products'(page=${products.number - 1})}" th:if="${products.hasPrevious()}">Previous</a>
+    <span th:text="${products.number + 1}"></span>/<span th:text="${products.totalPages}"></span>
+    <a th:href="@{'/products'(page=${products.number + 1})}" th:if="${products.hasNext()}">Next</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail subject</title>
+</head>
+<body>
+    <h1>Detail subject</h1>
+    <h2 th:if="${subject == null}" style="color: red">Entity not found</h2>
+    <table border="1" th:if="${subject != null}" th:object="${subject}">
+        <tr>
+            <td>Subject ID</td>
+            <td th:text="*{subjectId}"></td>
+        </tr>
+        <tr>
+            <td>Subject Name</td>
+            <td th:text="*{subjectName}"></td>
+        </tr>
+        <tr>
+            <td>Teacher</td>
+            <td th:text="*{teacher}"></td>
+        </tr>
+        <tr>
+            <td>Note</td>
+            <td th:text="*{note}"></td>
+        </tr>
+    </table>
+</body>
+</html>

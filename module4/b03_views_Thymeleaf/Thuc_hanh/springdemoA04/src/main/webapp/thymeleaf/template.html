@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="footer">
+    &copy; 2022 Codegym
+</div>
+<h1 th:fragment="header">Welcome to Codegym</h1>
+<div th:fragment="headerWithUser(name)">
+    <h1 th:text="|Welcome ${name} to Codegym|">Hello</h1>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete product</title>
+</head>
+<body>
+<h1>Xoá Sản phẩm</h1>
+<h2>Bạn có chắc muốn xoá sản phẩm này chứ?</h2>
+    <input th:type="hidden" th:field="*{product.id}">
+    <table class="table">
+        <tr>
+            <td>Têm sản phẩm:</td>
+            <td th:text="${product.name}"></td>
+        </tr>
+        <tr>
+            <td>Giá bắt đầu:</td>
+            <td th:text="${product.price}"></td>
+        </tr>
+        <tr>
+            <td>Tình Trạng:</td>
+            <td th:text="${product.status}"></td>
+        </tr>
+        <tr>
+            <td>loại sản phẩm:</td>
+            <td th:if="${product.productType}" th:text="${product.productType.name}"></td>
+            <td th:unless="${product.productType}"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button class="btn btn-danger" id="clickDelete"
+                        th:onclick="'javascript:actionDelete(\''+ ${product.id} + '\')'">Xoá</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

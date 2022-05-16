@@ -1,0 +1,46 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create student</title>
+    <link rel="stylesheet" href="/css/book/book.css">
+</head>
+<body>
+<h1 th:text="#{create.title}">Create Book</h1>
+<form action="/book/create" method="post" th:object="${book}" cssClass="">
+    <table border="1">
+        <tr>
+            <td th:text="#{bookname}">Name</td>
+            <td><input th:field="*{name}" /></td>
+            <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="error">Name Error</td>
+        </tr>
+        <tr>
+            <td th:text="#{price}">Price</td>
+            <td><input th:field="*{price}" /></td>
+            <td th:if="${#fields.hasErrors('price')}" th:errors="*{price}" class="error">Name Error</td>
+        </tr>
+        <tr>
+            <td th:text="#{author}">Author</td>
+            <td><input th:field="*{author}" /></td>
+            <td th:if="${#fields.hasErrors('author')}" th:errors="*{author}" class="error">Name Error</td>
+        </tr>
+        <tr>
+            <td>Category</td>
+            <td>
+                <select th:field="*{category}" >
+                    <option th:each="cate: ${categories}" th:value="${cate.categoryId}" th:text="${cate.categoryName}">
+                    </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Publish date</td>
+            <td><input type="date" th:field="*{publishDate}" /></td>
+            <td th:if="${#fields.hasErrors('publishDate')}" th:errors="*{publishDate}" class="error">Name Error</td>
+        </tr>
+        <tr>
+            <td><input type="reset" value="Reset"></td>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

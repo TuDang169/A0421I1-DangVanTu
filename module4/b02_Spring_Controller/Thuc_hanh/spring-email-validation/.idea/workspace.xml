@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eeded2f1-7486-4772-b22c-bca83754978f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/src/main/java/com/codegym/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/src/main/java/com/codegym/controller/DictionaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/src/main/java/com/codegym/dao/DictionnaryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/src/main/java/com/codegym/model/Dictionnary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/src/main/webapp/views/Dictionary.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/src/main/webapp/views/Result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/src/main/webapp/views/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/src/main/java/com/codegym/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/src/main/java/com/codegym/controller/SandwichController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/src/main/webapp/views/form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/src/main/webapp/views/selection.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module1/10.OOP/BaiTap/objects" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module1/10.OOP/BaiTap/objects" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/src/main/java/coom/codegym/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/src/main/java/com/codegym/config/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bai_tap/sandwich_condiments/src/main/java/coom/codegym/config/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/simple_dictionary/src/main/java/com/codegym/config/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="21sQWuki4Zz8lEWqzOXfaa3Umbu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../b01_introdution_Spring_MVC/Bai_tap/TransferMoney" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\A0421I1-DangVanTu\module4\b02_Spring_Controller\Thuc_hanh\spring-email-validation\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.codegym.controller" />
+      <recent name="com.codegym.config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\A0421I1-DangVanTu\module4\b02_Spring_Controller\Thuc_hanh\spring-email-validation\src\main\webapp\views" />
+      <recent name="D:\A0421I1-DangVanTu\module4\b02_Spring_Controller\Thuc_hanh\spring-email-validation\src\main\webapp" />
+      <recent name="D:\A0421I1-DangVanTu\module4\b02_Spring_Controller\Thuc_hanh\spring-email-validation\src\main\webapp\WEB-INF" />
+      <recent name="D:\A0421I1-DangVanTu\module4\b02_Spring_Controller\Thuc_hanh\spring-email-validation\src\main\webapp\WEB-INF\views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.54" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.54" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : com.codegym : spring-email-validation-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_spring-email-validation" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51762" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.codegym : spring-email-validation-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eeded2f1-7486-4772-b22c-bca83754978f" name="Default Changelist" comment="" />
+      <created>1638727349635</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638727349635</updated>
+      <workItem from="1638727352500" duration="2157000" />
+      <workItem from="1638778553937" duration="358000" />
+      <workItem from="1638779038618" duration="1174000" />
+      <workItem from="1638785902964" duration="864000" />
+      <workItem from="1638796421878" duration="3504000" />
+      <workItem from="1638898103860" duration="3992000" />
+      <workItem from="1638969777794" duration="407000" />
+      <workItem from="1639237798710" duration="957000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1638727835966">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="121" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1638727835966" />
+    <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638727617403">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="219" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1638727617403" />
+    <state x="496" y="108" key="FileChooserDialogImpl" timestamp="1639238761341">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="496" y="108" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1639238761341" />
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom" timestamp="1639238764590">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1639238764590" />
+    <state width="1024" height="210" key="GridCell.Tab.0.center" timestamp="1639238764589">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1639238764589" />
+    <state width="1024" height="210" key="GridCell.Tab.0.left" timestamp="1639238764589">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1639238764589" />
+    <state width="1024" height="210" key="GridCell.Tab.0.right" timestamp="1639238764589">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1639238764589" />
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom" timestamp="1639238764590">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1639238764590" />
+    <state width="1024" height="210" key="GridCell.Tab.1.center" timestamp="1639238764590">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1639238764590" />
+    <state width="1024" height="210" key="GridCell.Tab.1.left" timestamp="1639238764590">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1639238764590" />
+    <state width="1024" height="210" key="GridCell.Tab.1.right" timestamp="1639238764590">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1639238764590" />
+    <state width="1024" height="210" key="GridCell.Tab.2.bottom" timestamp="1638970199473">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1638970199473" />
+    <state width="1024" height="210" key="GridCell.Tab.2.center" timestamp="1638970199473">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1638970199473" />
+    <state width="1024" height="210" key="GridCell.Tab.2.left" timestamp="1638970199473">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1638970199473" />
+    <state width="1024" height="210" key="GridCell.Tab.2.right" timestamp="1638970199473">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1024" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1638970199473" />
+    <state x="121" y="0" key="SettingsEditor" timestamp="1638727670003">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="121" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1638727670003" />
+    <state x="209" y="95" key="new project wizard" timestamp="1638901401879">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="95" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1638901401879" />
+  </component>
+</project>

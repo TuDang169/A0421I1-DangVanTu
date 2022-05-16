@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/create-category">Create new Category</a>
+<h1>Categorys</h1>
+<form>
+    Search by name:
+    <input name="search" type="text"/>
+    <input type="submit" value="Search"/>
+</form>
+<div>
+    <a th:href="@{'/categorys'(page=${category.number - 1})}" th:if="${category.hasPrevious()}">Previous</a>
+    <span th:text="${category.number + 1}"></span>/<span th:text="${category.totalPages}"></span>
+    <a th:href="@{'/customers'(page=${category.number + 1})}" th:if="${category.hasNext()}">Next</a>
+</div>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <th:block th:each="category : ${category}">
+        <tr>
+            <td th:text="${category.name}"></td>
+            <td><a th:href="@{/edit-category/__${category.id}__ }">Edit</a></td>
+            <td><a th:href="@{/delete-category/__${category.id}__ }">Delete</a></td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

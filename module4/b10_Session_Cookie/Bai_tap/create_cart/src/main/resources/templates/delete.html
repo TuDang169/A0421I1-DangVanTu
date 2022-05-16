@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Delete Product</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+
+</head>
+<body>
+<h3>Do you want to delete this product </h3>
+
+<form th:action="@{/product/delete-product/{id}(id=${product.getIdProduct()})}" method="post" th:object="${product}">
+    <table class="table">
+        <tr>
+            <th>Product Code</th>
+            <td><span th:text = "${product.codeProduct}"></span></td>
+        </tr>
+        <tr>
+            <th>Product Name</th>
+            <td><span th:text = "${product.nameProduct}"></span></td>
+        </tr>
+        <tr>
+            <th>Old Price</th>
+            <td><span th:text = "${product.oldPrice}"></span></td>
+        </tr>
+        <tr>
+            <th>New Price</th>
+            <td><span th:text = "${product.newPrice}"></span></td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td><span th:text = "${product.description}"></span></td>
+        </tr>
+        <tr>
+            <th>Image Link</th>
+            <td><img width="100px" height="100px" th:src="@{/static/img/{img}(img = ${product.getImg()})}"></td>
+        </tr>
+        <tr style="text-align: center">
+            <th th:colspan="2"><input class="btn btn-warning" type="submit" value="Delete product"></th>
+        </tr>
+    </table>
+
+</form>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+</body>
+</html>
