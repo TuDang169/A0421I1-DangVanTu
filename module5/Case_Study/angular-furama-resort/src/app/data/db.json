@@ -1,0 +1,76 @@
+{
+  "customers": [
+    {
+      "id": "2",
+      "name": "B",
+      "birthday": "2022-03-02",
+      "idCard": "123",
+      "phone": "5555",
+      "email": "B@gmail.com",
+      "gender": "1"
+    },
+    {
+      "id": "3",
+      "name": "a",
+      "birthday": "2022-03-02",
+      "idCard": "123",
+      "phone": "44444",
+      "email": "A@gmail.com",
+      "gender": "0"
+    },
+    {
+      "id": "4",
+      "name": "E",
+      "birthday": "2022-03-02",
+      "idCard": "123",
+      "phone": "44444",
+      "email": "E@gmail.com",
+      "gender": "1"
+    },
+    {
+      "id": "5",
+      "name": "a",
+      "birthday": "2022-03-02",
+      "idCard": "123",
+      "phone": "44444",
+      "email": "A@gmail.com",
+      "gender": "0"
+    },
+    {
+      "id": "6",
+      "name": "Putin",
+      "birthday": "2022-03-02",
+      "gender": "0",
+      "idCard": "2022",
+      "phone": "8888",
+      "email": "Putin@gmail.com"
+    },
+    {
+      "id": "8",
+      "name": "Biden",
+      "birthday": "2022-03-09",
+      "gender": "0",
+      "idCard": "123",
+      "phone": "123",
+      "email": "Biden@gmail.com"
+    },
+    {
+      "id": "9",
+      "name": "N",
+      "birthday": "2022-03-04",
+      "gender": "1",
+      "idCard": "123",
+      "phone": "123",
+      "email": "a"
+    },
+    {
+      "id": "10",
+      "name": "V",
+      "birthday": "2022-03-04",
+      "gender": "1",
+      "idCard": "123",
+      "phone": "123",
+      "email": "asd"
+    }
+  ]
+}

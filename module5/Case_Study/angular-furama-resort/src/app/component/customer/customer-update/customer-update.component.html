@@ -1,0 +1,39 @@
+<h2>Update Customer</h2>
+<form [formGroup]="customerForm" (ngSubmit)="updateCustomer()">
+  <table>
+    <tr>
+      <td>ID:</td>
+      <td><input type="text" formControlName="id"></td>
+    </tr>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Birthday:</td>
+      <td><input type="date" formControlName="birthday"></td>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+      <td>
+        <select formControlName="gender">
+          <option value="1" [selected]="customerForm.value.gender === '1'">Male</option>
+          <option value="0" [selected]="customerForm.value.gender === '0'">Female</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Id Card:</td>
+      <td><input type="text" formControlName="idCard"></td>
+    </tr>
+    <tr>
+      <td>Phone Number:</td>
+      <td><input type="text" formControlName="phone"></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="text" formControlName="email"></td>
+    </tr>
+    <button type="submit">Update</button>
+  </table>
+</form>

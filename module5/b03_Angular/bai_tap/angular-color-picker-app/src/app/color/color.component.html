@@ -1,0 +1,10 @@
+<h2>Font size editor</h2>
+
+<div>
+  <label>Enter color:</label>
+  <input #element type="text" value="red" (focusout)="changeColor(element.value)">
+</div>
+
+<p class="output" [style.color]="color">
+  This is a color.
+</p>

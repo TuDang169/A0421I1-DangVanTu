@@ -1,0 +1,32 @@
+<button class="btn btn-dark" [routerLink]="['/customer/create']">Create Customer</button>
+<table class="table">
+  <thead class="table-dark">
+  <tr class="border-dark">
+    <th scope="col">ID</th>
+    <th scope="col">Name</th>
+    <th scope="col">Birthday</th>
+    <th scope="col">Gender</th>
+    <th scope="col">Id Card</th>
+    <th scope="col">Phone number</th>
+    <th scope="col">Email</th>
+    <th scope="col">Detail</th>
+    <th scope="col">Delete</th>
+    <th scope="col">Update</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let customer of customerList">
+    <td>{{customer.id}}</td>
+    <td>{{customer.name| uppercase}}</td>
+    <td>{{customer.birthday | date: "yyyy-MM-dd"}}</td>
+    <td *ngIf="customer.gender == true">Male</td>
+    <td *ngIf="customer.gender != true">Female</td>
+    <td>{{customer.idCard}}</td>
+    <td>{{customer.phone}}</td>
+    <td>{{customer.email}}</td>
+    <td><button class="btn btn-info" (click)="detailCustomer(customer)">Detail</button></td>
+    <td><button class="btn btn-danger"(click)="deleteCustomer(customer)">Delete</button></td>
+    <td><button class="btn btn-secondary"(click)="updateCustomer(customer)">Update</button></td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,16 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "dateOfBirth": "2021-01-01",
+      "point": 5
+    },
+    {
+      "id": "2",
+      "name": "HaiTT123",
+      "dateOfBirth": "2022-02-08",
+      "point": 9
+    }
+  ]
+}

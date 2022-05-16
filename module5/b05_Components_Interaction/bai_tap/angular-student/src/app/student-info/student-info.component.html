@@ -1,0 +1,16 @@
+<table border="1">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Point</th>
+    <th>Rank</th>
+  </tr>
+  <tr>
+    <td>{{student.id}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.point}}</td>
+    <td *ngIf="student.point >=9">Giỏi</td>
+    <td *ngIf="student.point <9" >Khá</td>
+  </tr>
+</table>
+

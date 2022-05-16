@@ -1,0 +1,10 @@
+<h2>Create Student</h2>
+<form [formGroup]="studentForm" (ngSubmit)="createStudent()">
+  <label>ID</label>
+  <input type="number" formControlName="id"><br>
+  <label>Name</label>
+  <input type="text" formControlName="name"><br>
+  <label>Point</label>
+  <input type="number" formControlName="point"><br>
+  <button type="submit">Create</button>
+</form>

@@ -1,0 +1,19 @@
+<h2>Calculator</h2>
+<label>
+  Number 1:
+  <input type="number" [(ngModel)]="num.num1">
+</label>
+<br>
+<label>
+  Number 2:
+  <input type="number" [(ngModel)]="num.num2">
+</label>
+<br>
+<label>
+  <button (click)="add(num.num1,num.num2)">+</button>
+  <button (click)="sub(num.num1,num.num2)">-</button>
+  <button (click)="multi(num.num1,num.num2)">x</button>
+  <button (click)="div(num.num1,num.num2)">/</button>
+  <p>{{result}}</p>
+</label>
+

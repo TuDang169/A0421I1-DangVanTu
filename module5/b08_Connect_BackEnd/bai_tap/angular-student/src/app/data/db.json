@@ -1,0 +1,14 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "json",
+      "point": 9
+    },
+    {
+      "id": 2,
+      "name": "voldermort",
+      "point": 5
+    }
+  ]
+}

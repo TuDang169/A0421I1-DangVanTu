@@ -1,0 +1,43 @@
+<h2>Create Customer</h2>
+<form [formGroup]="customerForm" (ngSubmit)="createCustomer()">
+  <table>
+    <tr>
+      <td>ID:</td>
+      <td><input type="text" formControlName="id"></td>
+    </tr>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Birthday:</td>
+      <td><input type="date" formControlName="birthday"></td>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+      <td>
+        <input type="radio" checked formControlName="gender"  value="1">Male
+        <input type="radio" formControlName="gender" value="0">Female
+      </td>
+    </tr>
+    <tr>
+      <td>Id Card:</td>
+      <td><input type="text" formControlName="idCard"></td>
+    </tr>
+    <tr>
+      <td>Phone Number:</td>
+      <td><input type="text" formControlName="phone"></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="text" formControlName="email"></td>
+    </tr>
+    <button type="submit">Create</button>
+<!--    <div style="color: red" *ngIf="(customerForm.controls.id.hasError('required') || customerForm.controls.id.hasError(('minlength')))&& studentForm.get('id').pristine"  >-->
+<!--      Id không được để trống-->
+<!--    </div>-->
+<!--    <div style="color: red" *ngIf="(customerForm.controls.point.hasError('invalid0') && customerForm.get('point').dirty)"  >-->
+<!--      point không được nhỏ hơn 0-->
+<!--    </div>-->
+  </table>
+</form>

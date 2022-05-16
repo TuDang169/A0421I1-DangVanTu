@@ -1,0 +1,21 @@
+<table class="table">
+  <tr class="border-dark">
+    <th>ID</th>
+    <th>Name</th>
+    <th>Birthday</th>
+    <th>Gender</th>
+    <th>Id Card</th>
+    <th>Phone number</th>
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>{{customer.id}}</td>
+    <td>{{customer.name| uppercase}}</td>
+    <td>{{customer.birthday | date: "yyyy-MM-dd"}}</td>
+    <td *ngIf="customer.gender == true">Male</td>
+    <td *ngIf="customer.gender != true">Female</td>
+    <td>{{customer.idCard}}</td>
+    <td>{{customer.phone}}</td>
+    <td>{{customer.email}}</td>
+  </tr>
+</table>

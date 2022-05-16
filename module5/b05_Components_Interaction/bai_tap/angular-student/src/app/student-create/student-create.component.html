@@ -1,0 +1,10 @@
+<h2>Create Student</h2>
+<form>
+  <label>ID</label>
+  <input type="number" [(ngModel)]="student.id" name="id"><br>
+  <label>Name</label>
+  <input type="text" [(ngModel)]="student.name" name="name"><br>
+  <label>Point</label>
+  <input type="number" [(ngModel)]="student.point" name="point"><br>
+  <button (click)="createStudent()">Create</button>
+</form>

@@ -1,0 +1,7 @@
+<!--interpolation-->
+  <p>{{student.id}}</p>
+  <p>{{student.name}}</p>
+  <!--Property binding-->
+  <input [value]="student.name" (change)="changeNameStudent($event.target)">
+
+  <input [(ngModel)]="student.name">
