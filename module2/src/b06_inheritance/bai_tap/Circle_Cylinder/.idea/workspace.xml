@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2b8ac99-1d38-4484-a5ca-c7e9fa17eeb8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/controllers/FuramaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/models/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/models/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/models/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/models/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/models/Facility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/models/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/models/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/models/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/models/Villa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/services/BookingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/services/ContactService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/services/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/services/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/services/FacilityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/services/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/services/impl/BookingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/services/impl/ContactServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/services/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/services/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../FuramaResort/src/services/impl/FacilityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b17_io_binary_serialization/thuc_hanh/b02_read_write_file/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b17_io_binary_serialization/thuc_hanh/b02_read_write_file/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b18_string_regex/thuc_hanh/CrawlSongExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b18_string_regex/thuc_hanh/validate_account/AccountExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b18_string_regex/thuc_hanh/validate_account/AccountExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b18_string_regex/thuc_hanh/validate_email/EmailExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../b18_string_regex/thuc_hanh/validate_email/EmailExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Diagram/OOP.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Diagram/OOP.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Slides/Slide 01 - Pseudo Code  Flowchart.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Slides/Slide 02 - Git  HTML.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Slides/Slide 03 - HTML Form  Table.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Slides/Slide 04 - JavaScript Overview.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Slides/Slide 05 - Variable and Data Types.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Slides/Slide 06 - Conditional Statements.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Slides/Slide 07 - Loop Statements.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Slides/Slide 08 - Arrays.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Slides/Slide 09 - Function.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Slides/Slide 10 - Introduction to OOP.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Slides/Slide 11 - Objects and Classes.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module1/10.OOP/BaiTap/objects" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module1/10.OOP/BaiTap/objects" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module1/12.CaseStudy/YeuCau2/Bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module1/12.CaseStudy/YeuCau2/Bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module1/12.CaseStudy/YeuCau5/Bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module1/12.CaseStudy/YeuCau5/Bai1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module1/13.FinalExam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module1/13.FinalExam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module1/13.FinalExam/Bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module1/13.FinalExam/Bai1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module1/13.FinalExam/Bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module1/13.FinalExam/Bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module1/13.FinalExam/Bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module1/13.FinalExam/Bai3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../module1/13.FinalExam/Bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../module1/13.FinalExam/Bai4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../out/production/module2/b16_io_text_file/bai_tap/b02_read_file_csv/ReadFileCSV.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../out/production/module2/b16_io_text_file/bai_tap/b02_read_file_csv/ReadFileCSV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../out/production/module2/b17_io_binary_serialization/thuc_hanh/CopyLargeFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../out/production/module2/b17_io_binary_serialization/thuc_hanh/CopyLargeFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../b17_io_binary_serialization/thuc_hanh/CopyLargeFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../b17_io_binary_serialization/thuc_hanh/CopyLargeFile.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1yVKUevytCbJFELc7XxDoU5n0cP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2b8ac99-1d38-4484-a5ca-c7e9fa17eeb8" name="Default Changelist" comment="" />
+      <created>1632331333091</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632331333091</updated>
+      <workItem from="1632331335056" duration="31000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="496" y="108" key="FileChooserDialogImpl" timestamp="1632331364329">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="496" y="108" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1632331364329" />
+  </component>
+</project>
