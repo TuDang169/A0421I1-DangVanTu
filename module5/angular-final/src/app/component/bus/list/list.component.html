@@ -1,0 +1,37 @@
+<button class="btn btn-dark" [routerLink]="['/bus/create']">Create Bus</button>
+<table class="table">
+  <thead class="table-dark">
+  <tr class="border-dark">
+    <th scope="col">Số xe</th>
+    <th scope="col">Loại xe</th>
+    <th scope="col">Tên nhà xe</th>
+    <th scope="col">Đểm đi</th>
+    <th scope="col">Điểm đến</th>
+    <th scope="col">Số điện thoại</th>
+    <th scope="col">Email</th>
+    <th scope="col">Giờ đi</th>
+    <th scope="col">Giờ đến</th>
+    <th scope="col">Sửa</th>
+    <th scope="col">Xoá</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let bus of busList">
+    <td>{{bus.id}}</td>
+    <td>{{bus.type}}</td>
+    <td>{{bus.name}}</td>
+    <td>{{bus.locationGo}}</td>
+    <td>{{bus.locationArrival}}</td>
+    <td>{{bus.phone}}</td>
+    <td>{{bus.email}}</td>
+    <td>{{bus.timeGo}}</td>
+    <td>{{bus.timeArrival}}</td>
+<!--    <td>{{bus.name| uppercase}}</td>-->
+<!--    <td>{{bus.birthday | date: "yyyy-MM-dd"}}</td>-->
+<!--    <td *ngIf="customer.gender == true">Male</td>-->
+<!--    <td *ngIf="customer.gender != true">Female</td>-->
+    <td><button class="btn btn-danger"(click)="deleteCustomer(bus)">Delete</button></td>
+    <td><button class="btn btn-info"(click)="updateCustomer(bus)">Update</button></td>
+  </tr>
+  </tbody>
+</table>

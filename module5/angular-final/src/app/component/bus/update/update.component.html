@@ -1,0 +1,48 @@
+<form [formGroup]="busForm" (ngSubmit)="updateBus()">
+  <fieldset>
+    <legend>Chỉnh sửa thông tin xe khách</legend>
+    <label></label>
+  <table>
+    <tr>
+      <td>Số xe:</td>
+      <td><input type="text" disabled formControlName="id"></td>
+    </tr>
+    <tr>
+      <td>Loại xe:</td>
+      <td><input type="text" formControlName="type"></td>
+    </tr>
+    <tr>
+      <td>Tên nhà xe:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Điểm đi:</td>
+      <td><input type="text" formControlName="locationGo"></td>
+    </tr>
+    <tr>
+      <td>Điểm đến:</td>
+      <td><input type="text" formControlName="locationArrival"></td>
+    </tr>
+    <tr>
+      <td>Số điện thoại:</td>
+      <td><input type="text" formControlName="phone"></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="text" formControlName="email"></td>
+    </tr>
+    <tr>
+      <td>Giờ đi:</td>
+      <td><input type="text" formControlName="timeGo"></td>
+    </tr>
+    <tr>
+      <td>Giờ đến:</td>
+      <td><input type="text" formControlName="timeArrival"></td>
+    </tr>
+    <tr>
+      <td><button class="btn btn-info" [routerLink]="['/bus']">Quay về</button></td>
+      <td><button class="btn btn-info" type="submit">Chỉnh sửa</button></td>
+    </tr>
+  </table>
+  </fieldset>
+</form>

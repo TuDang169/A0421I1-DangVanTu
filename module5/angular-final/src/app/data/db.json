@@ -1,0 +1,37 @@
+{
+  "buses": [
+    {
+      "id": "1222",
+      "type": "Ghế ngồi",
+      "name": "Hoàng Long",
+      "locationGo": "Đà Nẵng",
+      "locationArrival": "Quảng Bình",
+      "phone": "093555555",
+      "email": "hoanglong@gmail.com",
+      "timeGo": "12:20",
+      "timeArrival": "15:00"
+    },
+    {
+      "id": "2311",
+      "type": "Giường nằm",
+      "name": "Mai Linh",
+      "locationGo": "Đà Nẵng",
+      "locationArrival": "Huế",
+      "phone": "093222222",
+      "email": "mailinh@gmail.com",
+      "timeGo": "06:20",
+      "timeArrival": "08:00"
+    },
+    {
+      "id": "9401",
+      "type": "Giường nằm",
+      "name": "Hoàng Huy",
+      "locationGo": "Quảng Ngãi",
+      "locationArrival": "Đại Học Nông Lâm",
+      "phone": "093555555",
+      "email": "hoanghuy@gmail.com",
+      "timeGo": "12:20",
+      "timeArrival": "15:00"
+    }
+  ]
+}
