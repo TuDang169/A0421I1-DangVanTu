@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="290b5b7a-0eba-4f56-b625-b8c1218febac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../../../module2/src/case_study/ProductManager/ProductManager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../../Case_Study/JWBD/Module2_AccountName_WBE/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../../Case_Study/JWBD/Module2_AccountName_WBE/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../../Case_Study/JWBD/Module2_AccountName_WBE/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../../Case_Study/JWBD/Module2_AccountName_WBE/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../../Case_Study/JWBD/Module2_AccountName_WBE/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../../Case_Study/JWBD/Module2_AccountName_WBE/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../../Case_Study/JWBD/Module2_AccountName_WBE/src/main/java/controller/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../../Case_Study/JWBD/Module2_AccountName_WBE/src/main/webapp/CSS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Diagram/OOP.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../Diagram/OOP.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/ProductManager.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/src/chuc_nang/ChucNang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/src/chuc_nang/ChucNangSPNhapKhau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/src/chuc_nang/ChucNangSPXuatKhau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/src/chuc_nang/trien_khai/TrienKhaiSPNhapKhau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/src/chuc_nang/trien_khai/TrienKhaiSPXuatKhau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/src/du_lieu/SPNhapKhau.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/src/du_lieu/SPXuatKhau.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/src/menu/QuanLySanPham.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/src/san_pham/SanPham.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/src/san_pham/SanPhamNhapKhau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/src/san_pham/SanPhamXuatKhau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../ProductManager/src/tien_ich/DocVaInFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Slides/Slide 01 - Pseudo Code  Flowchart.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Slides/Slide 02 - Git  HTML.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Slides/Slide 03 - HTML Form  Table.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Slides/Slide 04 - JavaScript Overview.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Slides/Slide 05 - Variable and Data Types.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Slides/Slide 06 - Conditional Statements.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Slides/Slide 07 - Loop Statements.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Slides/Slide 08 - Arrays.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Slides/Slide 09 - Function.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Slides/Slide 10 - Introduction to OOP.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../Slides/Slide 11 - Objects and Classes.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../module1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../module1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../module1/10.OOP/BaiTap/objects" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../module1/10.OOP/BaiTap/objects" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../module1/12.CaseStudy/YeuCau2/Bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../module1/12.CaseStudy/YeuCau2/Bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../module1/12.CaseStudy/YeuCau5/Bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../module1/12.CaseStudy/YeuCau5/Bai1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../module1/13.FinalExam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../module1/13.FinalExam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../module1/13.FinalExam/Bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../module1/13.FinalExam/Bai1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../module1/13.FinalExam/Bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../module1/13.FinalExam/Bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../module1/13.FinalExam/Bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../module1/13.FinalExam/Bai3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../module1/13.FinalExam/Bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../module1/13.FinalExam/Bai4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Case_Study/create_data_query.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Case_Study/database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../Case_Study/query_task.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../b12_JDBC_CRUD/bai_tap/user-manager/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../b12_JDBC_CRUD/bai_tap/user-manager/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../b12_JDBC_CRUD/bai_tap/user-manager/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../b12_JDBC_CRUD/bai_tap/user-manager/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../b12_JDBC_CRUD/bai_tap/user-manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../b12_JDBC_CRUD/bai_tap/user-manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../.." />
+  </component>
+  <component name="ProjectId" id="20xF7hvhJFiNYHm9cgHW04bba5X" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="290b5b7a-0eba-4f56-b625-b8c1218febac" name="Default Changelist" comment="" />
+      <created>1636978165227</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636978165227</updated>
+      <workItem from="1636978167875" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="496" y="108" key="FileChooserDialogImpl" timestamp="1636978174840">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="496" y="108" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636978174840" />
+  </component>
+</project>

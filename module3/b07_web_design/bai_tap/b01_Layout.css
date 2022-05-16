@@ -1,0 +1,27 @@
+body, header, nav, section, article, aside, footer{
+    margin: 1%;
+    border: gray 1px solid;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 300px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    height: 145px;
+}
+section, article{
+    width: 130%;
+    height: 45%;
+    margin:2%;
+}
+
+aside{
+    width: 25%;
+    height: 95%;
+    margin: 1% 0% 1% 20%;
+}

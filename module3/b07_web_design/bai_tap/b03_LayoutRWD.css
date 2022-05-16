@@ -1,0 +1,124 @@
+#body{
+    font-family: Arial;
+}
+#menu{
+    background-color: #3d3d3d;
+    color: azure;
+    height: 40px;
+    padding:0;
+}
+#menu ul, #menu li{
+    padding: 0;
+    margin: 0;
+}
+#menu li{
+    position: relative;
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#menu li a {
+    width: 100px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    background-color: #3d3d3d;
+    color: azure;
+}
+#menu ul ul li a {
+    width: 100px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+#login a{
+    left: 50%;
+    margin-left: 600%;
+}
+
+#menu li a:hover{
+    background-color: #808080;
+}
+
+#menu ul ul{
+    position: absolute;
+    top: 40px;
+    visibility: hidden;
+}
+
+#menu ul li:hover ul{
+    visibility: visible;
+}
+
+.foot {
+    line-height: 40px;
+    color: azure;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    background-color: #3d3d3d;
+    position: fixed;
+    bottom: 0px;
+    padding: 0;
+}
+
+.left, .right{
+    background-color: #DCDCDC;
+}
+
+.col-s-1 {width: 8.33333%;}
+.col-s-2 {width: 16.66667%;}
+.col-s-3 {width: 25%;}
+.col-s-4 {width: 33.33333%;}
+.col-s-5 {width: 41.66667%;}
+.col-s-6 {width: 50%;}
+.col-s-7 {width: 58.33333%;}
+.col-s-8 {width: 66.66667%;}
+.col-s-9 {width: 75%;}
+.col-s-10 {width: 83.33333%;}
+.col-s-11 {width: 91.66667%;}
+.col-s-12 {width: 100%;}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 550px;
+}
+
+.left ul, .right ul{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+
+}
+
+.content h1, .content p, .content h2,.content hr{
+    margin: 20px;
+}
+
+#content div{
+    position: relative;
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left ul,.right ul li{
+    list-style: none;
+    margin-top: 10%;
+}
+
+.right ul li{
+    margin: 10%;
+    border: grey 1px solid;
+    height: 60px;
+    line-height: 60px;
+}
+
+
+
+
